@@ -1,3 +1,5 @@
+from datetime import datetime
+from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Department, Role, Employee
 
@@ -12,7 +14,29 @@ def all_emp(request):
     })
     
 def add_emp(request):
-    return render(request, 'add_emp.html')
+    
+    if request.method == 'POST':
+        first_name =  request.POST['first_name']
+        last_name =  request.POST['last_name']
+        salary =  int(request.POST['salary'])
+        bonus =  int(request.POST['bonus'])
+        phone =  int(request.POST['phone'])
+        department =  request.POST['department']
+        role =  request.POST['role']
+        
+        new_employee = Employee(first_name=first_name, last_name=last_name, 
+                 phone=phone, salary=salary, bonus=bonus,
+                 role_id=role, dept_id=department,
+                 hire_date=datetime.now())
+        
+        new_employee.save()
+        return HttpResponse('Employee added Successfully!')
+    
+    elif request.method == 'GET':
+        return render(request, 'add_emp.html')
+    
+    else:
+        return HttpResponse('An Exception Occured! Employee has not been added!')
 
 def remove_emp(request):
     return render(request, 'remove_emp.html')
