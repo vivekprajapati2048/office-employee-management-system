@@ -1,2 +1,2 @@
-# office-employee-management-system
-This is a Python-Django project tutorial from the scratch. In this video, I will create a project named "Office Employees Management System (OEMS)" from the scratch. It will cover many topics that will be helpful for you in order to clear the interviews like Python, Django Framework, Django ORM, Django Queryset, Basic SQL (Database Knowledge), Basic HTML, CSS &amp; Basic Bootstrap. 
+# Office Employees Management System (OEMS)
+This is a Python-Django project from the scratch. I have used Python, Django Framework, Django ORM, Django Queryset, Basic SQL, HTML, CSS & Bootstrap. 
