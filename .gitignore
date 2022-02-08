@@ -1,5 +1,5 @@
 # Directories to ignore
-oems
+oems/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
