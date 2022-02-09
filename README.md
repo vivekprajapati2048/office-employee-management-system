@@ -1,2 +1,2 @@
 # Office Employees Management System (OEMS)
-This is a Python-Django project from the scratch. I have used Python, Django Framework, Django ORM, Django Queryset, Basic SQL, HTML, CSS & Bootstrap.
+This is a Python-Django project from the scratch. This can do the tasks like - View all employees, Add an employee, Remove an employee and Filter an employee. I have used Python, Django Framework, Django ORM, Django Queryset, Basic SQL, HTML, CSS & Bootstrap.
